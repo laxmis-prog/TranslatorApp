@@ -16,9 +16,10 @@ export default function App () {
         <input value={text} onChange={(event) => setText(event.target.value)} />
         <p>You typed: {text}</p>
 
-       <button>
+       <button onClick={() => setSubmittedText(text)}>
         Translate
        </button>
+       <p>{submittedText}</p>
 
 
 
